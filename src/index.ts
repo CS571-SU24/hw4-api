@@ -3,7 +3,7 @@ import fs from 'fs'
 import express, { Express } from 'express';
 import cookies from "cookie-parser";
 
-import { CS571DefaultSecretConfig, CS571Initializer } from '@cs571/su24-api-framework'
+import { CS571DefaultSecretConfig, CS571Initializer } from '@cs571/api-framework'
 import { CS571StudentsRoute } from './routes/students';
 import HW4PublicConfig from './model/configs/hw4-public-config';
 import { CS571StudentsXSSRoute } from './routes/students-xss';

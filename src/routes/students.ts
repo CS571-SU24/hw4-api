@@ -1,11 +1,11 @@
 import { Express } from 'express';
 
-import { CS571Route } from "@cs571/su24-api-framework/src/interfaces/route";
+import { CS571Route } from "@cs571/api-framework/src/interfaces/route";
 import { Student } from '../model/student';
 
 export class CS571StudentsRoute implements CS571Route {
 
-    public static readonly ROUTE_NAME: string = '/rest/su24/hw4/students';
+    public static readonly ROUTE_NAME: string = (process.env['CS571_BASE_PATH'] ?? "") + '/students';
 
     private readonly students: Student[];
 

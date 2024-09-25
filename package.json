@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@cs571/su24-api-framework": "0.3.2",
+    "@cs571/api-framework": "0.4.4",
     "cookie-parser": "^1.4.6",
     "express": "^4.18.2"
   },
