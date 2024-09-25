@@ -6,7 +6,7 @@ RUN mkdir /cs571
 ENV ENV_NAME=prod
 ENV CS571_PUBLIC_CONFIG_PATH=/cs571/config.prod.public
 ENV CS571_PRIVATE_CONFIG_PATH=/cs571/config.prod.secret
-ENV PORT=48104
+ENV PORT=38104
 
 COPY LICENSE LICENSE
 COPY tsconfig.json tsconfig.json
@@ -19,5 +19,5 @@ COPY src/. src/.
 COPY includes/. includes/.
 RUN npm run build
 
-EXPOSE 48104
+EXPOSE 38104
 CMD [ "npm", "start" ]
